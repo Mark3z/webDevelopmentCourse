@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 40px;
+	font-size: 175%;
+	font-weight: bold;
+}
+
+.box {
+	position: relative;
+	height: 200px;
+	margin: 20px;
+	border: 2px black solid;
+	background-color: #969696;
+}
+
+.box-title {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	text-align: center;
+	font-size: 125%;
+	font-weight: bold;
+	padding: 3px 50px 3px;
+	border-left: 1px black solid;
+	border-bottom: 1px black solid;
+}
+
+.red {
+	background-color: #CC0033;
+}
+
+.orange {
+	background-color: #FF6633;
+}
+
+.yellow {
+	background-color: #FFCC33;
+}
+
+.box-text {
+	height: 175px;
+	padding: 2.8em 20px 0 20px;
+}
+
+/* .position is used to splitting rows in right proportion */
+.position {
+	float: left;
+}
+
+/* Desktop layout */
+@media (min-width: 992px) {
+	.position {
+		width: 33.33%;
+	}
+}
+
+/* Tablet layout */
+@media (min-width: 768px) and (max-width: 991px) {
+	.position {
+		width: 50%;
+	}
+	.tablet-full-row {
+		width: 100%;
+	}
+	h1 {
+		margin-bottom: 20px;
+	}
+
+}
+
+/* Mobile view layout */
+@media (max-width: 767px) {
+	.position {
+		width: 100px;
+	}
+	h1 {
+		margin-bottom: 0px;
+	}
+}
+
